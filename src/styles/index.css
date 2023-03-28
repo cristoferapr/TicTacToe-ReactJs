@@ -10,3 +10,70 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.body
+{background-color: rgb(161, 148, 143);
+height: 100vh;
+}
+
+.board {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+.menu-board{
+  background-color: rgb(137, 108, 99);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 50vw;
+  height: 280px;
+}
+
+.btnn{
+  width: 10%;
+  height: 30%;
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgb(107, 85, 79);
+  border-style: none;
+}
+
+.x{
+  color: rgb(195, 141, 55);
+}
+
+.y{
+  color: rgb(106, 148, 195);
+}
+
+.square {
+    border: 3px solid #171717;
+    background-color: rgb(154, 131, 121);
+opacity: 0.8;
+background-image:  linear-gradient(#272727 1px, transparent 1px), linear-gradient(to right, #272727 1px, #949491 1px);
+background-size: 20px 20px;
+    border-style:dotted;
+    float: left;
+    font-size: 90px;
+    font-weight: 600;
+    height: 140px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 140px;
+  }
+
+button:hover {
+    cursor: pointer;
+  }
